@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+body, h1, h2, p, ul, ol, li, a {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+ }
+ 
+ body {
+   background-color: #77BCFF;
+   font-family: 'Raleway', sans-serif;
+ }
+ 
+ header {
+   background-color: dodgerblue;
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+   border-bottom: 2px solid black;
+ }
+ 
+ h1 {
+   font-size: 36px;
+   margin: 10px 0;
+   text-shadow: 1.5px 1.5px #e34646;
+ }
+
+ h2 {
+   font-size: 20px;
+   margin: 10px 0;
+   text-shadow: 1.1px 1.1px #8f8c8c;
+ }
+ 
+ p {
+   font-size: 18px;
+   
+ }
+
+ a {
+   color: #0079bf;
+   text-decoration: underline;
+   display: block;
+   margin-top: 10px;
+ }
+ 
+ /* Styles for ID's and Classes */
+ #trello-board {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+ }
+ 
+
+ .trello-list {
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   margin: 0 20px;
+   min-width: 250px;
+   padding: 10px;
+   border-radius: 4px;
+ }
+ 
+ .cards {
+   padding: 0;
+ }
+ 
+ .card {
+   background-color: #fff;
+   border: 1px solid #ddd;
+   padding: 10px;
+   margin: 8px 0;
+   border-radius: 4px;
+ }
+ 
+
+ .labels {
+   display: flex;
+   margin-bottom: 5px;
+ }
+ 
+ .label {
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+   border: 1px solid #000;
+   border-radius: 50%;
+ }
+ 
+/* Style Colors for Different TE Labels */
+ .label.general {
+   background-color: #b6bbbf;
+ }
+ 
+ .label.pathway {
+   background-color: #61bd4f;
+ }
+ 
+ .label.individual {
+   background-color: #ff9f1a;
+ }
+ 
+ .label.pair {
+   background-color: #eb5a46;
+ }
+
+ /* Media Queries  */
+ 
+ /* Changes Background Color for smaller screens */
+ @media only screen and (max-width: 600px) {
+   body {
+     background-color: lightblue;
+   }
+ }
+ 
+ /* Changes flex direcetion to be responsive on smaller screens */
+ @media only screen and (max-width: 900px) {
+   #trello-board {
+      flex-direction: column; 
+   }
+
+   .trello-list {
+      margin: 10px 0; 
+   }
+}
